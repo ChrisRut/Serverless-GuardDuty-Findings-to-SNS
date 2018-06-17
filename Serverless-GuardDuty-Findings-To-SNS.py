@@ -43,6 +43,7 @@ def push_To_SNS_Topic(event):
         Message = json.dumps(event),
         Subject = event['detail']['title']
         )
+        logger.info('SUCCESS: Pushed GuardDuty Finding to SNS Topic')
         return "Successly pushed to Notification to SNS Topic"
     except KeyError as e:
         logger.error('ERROR: Unable to push to SNS Topic: Check [1] SNS Topic ARN is invalid, [2] IAM Role Permissions{0}'.format( str(e) ) )
@@ -50,6 +51,7 @@ def push_To_SNS_Topic(event):
 
 
 def lambda_handler(event, context):
+    setGlobalVars()
     return push_To_SNS_Topic(event)
 
 if __name__ == '__main__':
