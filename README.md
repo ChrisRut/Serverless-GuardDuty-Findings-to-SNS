@@ -7,7 +7,7 @@ GuardDuty then sends a notification about these subsequent occurrences based on 
 
 This AWS Lambda function will help you to automatically push GuardDuty findings to an SNS topic which can be used by ITSM tools for their workflows.
 
-#### Follow this article in [Youtube](https://www.youtube.com/watch?v=OHXDPDc1qEE)
+#### Follow this article in [Youtube](https://www.youtube.com/watch?v=OHXDPDc1qEE&list=PLxzKY3wu0_FKok5gI1v4g4S-g-PLaW9YD&index=20)
 
 ## Pre-Requisities
 We will need the following pre-requisites to successfully complete this activity,
